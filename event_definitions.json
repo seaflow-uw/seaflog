@@ -1,0 +1,643 @@
+{
+    "events": [
+        {
+            "name": "PMT1",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT1:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT1:1.05\n",
+                            "parsed": {
+                                "name": "PMT1",
+                                "value": 1.05,
+                                "line": "PMT1:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT2",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT2:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT2:1.05\n",
+                            "parsed": {
+                                "name": "PMT2",
+                                "value": 1.05,
+                                "line": "PMT2:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT3",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT3:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT3:1.05\n",
+                            "parsed": {
+                                "name": "PMT3",
+                                "value": 1.05,
+                                "line": "PMT3:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT4",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT4:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT4:1.05\n",
+                            "parsed": {
+                                "name": "PMT4",
+                                "value": 1.05,
+                                "line": "PMT4:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT5",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT5:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT5:1.05\n",
+                            "parsed": {
+                                "name": "PMT5",
+                                "value": 1.05,
+                                "line": "PMT5:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT6",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT6:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT6:1.05\n",
+                            "parsed": {
+                                "name": "PMT6",
+                                "value": 1.05,
+                                "line": "PMT6:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT7",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT7:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT7:1.05\n",
+                            "parsed": {
+                                "name": "PMT7",
+                                "value": 1.05,
+                                "line": "PMT7:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT8",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "PMT8:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPMT8:1.05\n",
+                            "parsed": {
+                                "name": "PMT8",
+                                "value": 1.05,
+                                "line": "PMT8:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PMT_ALL",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "ALL PMT:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nALL PMT:1.05\n",
+                            "parsed": {
+                                "name": "PMT_ALL",
+                                "value": 1.05,
+                                "line": "ALL PMT:1.05",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "name": "trigger_source",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "trigger source:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\ntrigger source:6\n",
+                            "parsed": {
+                                "name": "trigger_source",
+                                "value": "6",
+                                "line": "trigger source:6",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "trigger_level",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "trigger level:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\ntrigger level:-2.10\n",
+                            "parsed": {
+                                "name": "trigger_level",
+                                "value": -2.1,
+                                "line": "trigger level:-2.10",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stream_pressure_locked",
+            "type": "boolean",
+            "forms": [
+                {
+                    "startswith": "Stream pressure unlocked.",
+                    "value_action": "as_false",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nStream pressure unlocked.\n",
+                            "parsed": {
+                                "name": "stream_pressure_locked",
+                                "value": false,
+                                "line": "Stream pressure unlocked.",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "boolean"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "startswith": "Stream pressure locked.",
+                    "value_action": "as_true",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nStream pressure locked.\n",
+                            "parsed": {
+                                "name": "stream_pressure_locked",
+                                "value": true,
+                                "line": "Stream pressure locked.",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "boolean"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pump_voltage_change",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "Pump voltage change:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPump voltage change:0.20\n",
+                            "parsed": {
+                                "name": "pump_voltage_change",
+                                "value": 0.20,
+                                "line": "Pump voltage change:0.20",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "inlet_fault",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Fluid leak or inlet valve is shut",
+                    "value_action": "as_identity",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nFluid leak or inlet valve is shut, 21:08:00,20032015\n",
+                            "parsed": {
+                                "name": "inlet_fault",
+                                "value": "Fluid leak or inlet valve is shut, 21:08:00,20032015",
+                                "line": "Fluid leak or inlet valve is shut, 21:08:00,20032015",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pump_fault",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Pump over ",
+                    "value_action": "as_identity",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nPump over 25 psi, check setting or nozzle clog, 12:31:06,02082015\n",
+                            "parsed": {
+                                "name": "pump_fault",
+                                "value": "Pump over 25 psi, check setting or nozzle clog, 12:31:06,02082015",
+                                "line": "Pump over 25 psi, check setting or nozzle clog, 12:31:06,02082015",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "syringe_pump_fault",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Syringe pump not communicating with labview.",
+                    "value_action": "as_identity",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nSyringe pump not communicating with labview.\n",
+                            "parsed": {
+                                "name": "syringe_pump_fault",
+                                "value": "Syringe pump not communicating with labview.",
+                                "line": "Syringe pump not communicating with labview.",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "laser_alignment",
+            "type": "boolean",
+            "forms": [
+                {
+                    "startswith": "Change to laser alignment.",
+                    "value_action": "as_true",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nChange to laser alignment.\n",
+                            "parsed": {
+                                "name": "laser_alignment",
+                                "value": true,
+                                "line": "Change to laser alignment.",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "boolean"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stream_alignment",
+            "type": "boolean",
+            "forms": [
+                {
+                    "startswith": "Change to stream alignment",
+                    "value_action": "as_true",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nChange to stream alignment\n",
+                            "parsed": {
+                                "name": "stream_alignment",
+                                "value": true,
+                                "line": "Change to stream alignment",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "boolean"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "note",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "note:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nnote:could multiple faults be caused by air bubbles in syringe pump?\n",
+                            "parsed": {
+                                "name": "note",
+                                "value": "could multiple faults be caused by air bubbles in syringe pump?",
+                                "line": "note:could multiple faults be caused by air bubbles in syringe pump?",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "write_evt",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "write evt:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nwrite evt: 1\n",
+                            "parsed": {
+                                "name": "write_evt",
+                                "value": 1.0,
+                                "line": "write evt: 1",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "calibration",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "calibration:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\ncalibration: 1\n",
+                            "parsed": {
+                                "name": "calibration",
+                                "value": 1.0,
+                                "line": "calibration: 1",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "syringe_pump_injection",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "Syringe pump injection:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nSyringe pump injection:1\n",
+                            "parsed": {
+                                "name": "syringe_pump_injection",
+                                "value": 1.0,
+                                "line": "Syringe pump injection:1",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "laser",
+            "type": "float",
+            "forms": [
+                {
+                    "startswith": "laser:",
+                    "value_action": "as_float",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nlaser: 1\n",
+                            "parsed": {
+                                "name": "laser",
+                                "value": 1.0,
+                                "line": "laser: 1",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cruise_name",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Cruise Name:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nCruise Name: HOT227\n",
+                            "parsed": {
+                                "name": "cruise_name",
+                                "value": "HOT227",
+                                "line": "Cruise Name: HOT227",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "instrument_operator",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Instrument Operator:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nInstrument Operator: Kelsy\n",
+                            "parsed": {
+                                "name": "instrument_operator",
+                                "value": "Kelsy",
+                                "line": "Instrument Operator: Kelsy",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "instrument_serial",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Instrument Serial:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nInstrument Serial: 751\n",
+                            "parsed": {
+                                "name": "instrument_serial",
+                                "value": "751",
+                                "line": "Instrument Serial: 751",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "vessel",
+            "type": "text",
+            "forms": [
+                {
+                    "startswith": "Vessel:",
+                    "value_action": "as_text",
+                    "examples": [
+                        {
+                            "text": "2015-03-14T00-26-52+00-00\nVessel: Ben Hall 331\n",
+                            "parsed": {
+                                "name": "vessel",
+                                "value": "Ben Hall 331",
+                                "line": "Vessel: Ben Hall 331",
+                                "time": "2015-03-14T00:26:52+00:00",
+                                "line_number": 2,
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
