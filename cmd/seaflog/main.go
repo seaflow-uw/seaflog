@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/seaflow-uw/seaflog"
@@ -103,6 +104,9 @@ func main() {
 			if c.String("outfile") == "-" {
 				w = os.Stdout
 			} else {
+				if err = os.MkdirAll(filepath.Dir(c.String("outfile")), os.ModePerm); err != nil {
+					return err
+				}
 				w, err = os.Create(c.String("outfile"))
 				if err != nil {
 					return err
