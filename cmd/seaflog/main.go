@@ -99,8 +99,8 @@ func main() {
 						log.Fatal(err)
 					}
 				}()
-				bufr = bufio.NewReader(r)
 			}
+			bufr = bufio.NewReader(r)
 			if c.String("outfile") == "-" {
 				w = os.Stdout
 			} else {
@@ -111,16 +111,20 @@ func main() {
 				if err != nil {
 					return err
 				}
-				defer func() {
-					if err := bufw.Flush(); err != nil {
-						log.Fatal(err)
-					}
+			}
+			bufw = bufio.NewWriter(w)
+			// Defer flush and close
+			defer func() {
+				if err := bufw.Flush(); err != nil {
+					log.Fatal(err)
+				}
+				// Only close if it's not stdout
+				if c.String("outfile") != "-" {
 					if err := w.Close(); err != nil {
 						log.Fatal(err)
 					}
-				}()
-				bufw = bufio.NewWriter(w)
-			}
+				}
+			}()
 
 			// Create writer
 			tsdw := seaflog.NewTsdataWriter(

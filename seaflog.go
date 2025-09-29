@@ -18,7 +18,7 @@ import (
 	"github.com/ctberthiaume/tsdata"
 )
 
-var Version string = "v0.1.4"
+var Version string = "v0.1.5"
 
 // Log is seaflog's logger
 var Log *log.Logger
