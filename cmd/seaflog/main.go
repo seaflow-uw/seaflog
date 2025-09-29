@@ -58,23 +58,21 @@ func main() {
 				Usage: "don't report parsing errors",
 			},
 		},
-		Action: func(c *cli.Context) error {
-			var err error
-
+		Action: func(c *cli.Context) (err error) {
 			// Parse any timestamps
 			earliest := time.Time{}
 			latest := time.Time{}
 			if c.String("earliest") != "" {
 				earliest, err = time.Parse(time.RFC3339, c.String("earliest"))
 				if err != nil {
-					fmt.Fprintf(c.App.Writer, "error parsing timestamp for --earliest %s", c.String("earliest"))
+					fmt.Fprintf(c.App.Writer, "error parsing timestamp for --earliest %s\n", c.String("earliest"))
 					return err
 				}
 			}
 			if c.String("latest") != "" {
 				latest, err = time.Parse(time.RFC3339, c.String("latest"))
 				if err != nil {
-					fmt.Fprintf(c.App.Writer, "error parsing timestamp for --latest %s", c.String("latest"))
+					fmt.Fprintf(c.App.Writer, "error parsing timestamp for --latest %s\n", c.String("latest"))
 					return err
 				}
 			}
@@ -84,8 +82,6 @@ func main() {
 			// Open files
 			var r *os.File
 			var w *os.File
-			var bufr *bufio.Reader
-			var bufw *bufio.Writer
 			if c.String("logfile") == "-" {
 				r = os.Stdin
 			} else {
@@ -94,13 +90,14 @@ func main() {
 					return err
 				}
 				defer func() {
-					err := r.Close()
-					if err != nil {
-						log.Fatal(err)
+					if closeErr := r.Close(); closeErr != nil {
+						if err == nil {
+							err = closeErr
+						}
 					}
 				}()
 			}
-			bufr = bufio.NewReader(r)
+			bufr := bufio.NewReader(r)
 			if c.String("outfile") == "-" {
 				w = os.Stdout
 			} else {
@@ -112,16 +109,17 @@ func main() {
 					return err
 				}
 			}
-			bufw = bufio.NewWriter(w)
+			bufw := bufio.NewWriter(w)
 			// Defer flush and close
 			defer func() {
-				if err := bufw.Flush(); err != nil {
-					log.Fatal(err)
-				}
-				// Only close if it's not stdout
+				flushErr := bufw.Flush()
+				var closeErr error
 				if c.String("outfile") != "-" {
-					if err := w.Close(); err != nil {
-						log.Fatal(err)
+					closeErr = w.Close()
+				}
+				if flushErr != nil || closeErr != nil {
+					if err == nil {
+						err = fmt.Errorf("flush error: %v, close error: %v", flushErr, closeErr)
 					}
 				}
 			}()
@@ -166,7 +164,7 @@ func main() {
 				return err
 			}
 
-			return nil
+			return
 		},
 	}
 

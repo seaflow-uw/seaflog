@@ -18,7 +18,7 @@ import (
 	"github.com/ctberthiaume/tsdata"
 )
 
-var Version string = "v0.1.5"
+var Version string = "v0.1.6"
 
 // Log is seaflog's logger
 var Log *log.Logger
@@ -154,6 +154,10 @@ func (es *EventScanner) Err() error {
 }
 
 // CreateEvent creates an event
+//
+// Errors parsing the line are stored in the Event.Error field. An error
+// returned by this function indicates a more serious problem, such as an
+// invalid event definition.
 func CreateEvent(line string, t time.Time, lineNumber int) (event Event, err error) {
 	event = Event{Time: t, Line: line, LineNumber: lineNumber}
 
